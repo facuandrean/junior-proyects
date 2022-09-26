@@ -1,0 +1,166 @@
+/* Custom Properties */
+
+:root {
+    --bg-color: rgb(240, 240, 240);
+    --font-title: "Raleway", sans-serif;
+    --font-color: rgba(217, 0, 98, 0.75);
+    --link-color: #509EE3;
+}
+
+/* Reset */
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font-title);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*, 
+*::after, 
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--link-color);
+    transition: all .5s ease-out; /* Es para hacerle una transicion de opacidad cuando pongamos por encima el cursor */
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 0.85rem;
+}
+
+h6 {
+    margin: 0px;
+    font-size: 0.7rem;
+}
+
+img {
+    /* Imágenes responsivas */
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.6; /* Interlineado */
+}
+
+/* Components */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2vh;
+    row-gap: 2vh;
+
+    height: auto;
+    width: 100%;
+    padding: 1vh;
+}
+
+.main:nth-child(:first-child) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.main:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.main:nth-child(3) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.main:nth-child(4) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.main:nth-child(5) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.main:nth-child(6) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+/* 
+.main .card-proyect:nth-child(even) {
+    border: 1px solid blue;
+}
+.main .card-proyect:nth-child(odd) {
+    border: 1px solid seagreen;
+} 
+*/
+
+/* Utilities */
+
+
+
+/* Site Styles */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.title-container {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.title-present {
+    color: var(--font-color);
+}
