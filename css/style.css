@@ -89,10 +89,6 @@ p {
     padding: 1vh;
 }
 
-.card-proyect {
-    border: 1px solid red;
-}
-
 @media screen and (min-width: 1024px) {
     .main {
         grid-template-columns: 1fr 1fr 1fr;
